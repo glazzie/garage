@@ -27,7 +27,7 @@ export default function SideNav() {
   }, [dispatch])
 
   return (
-    <div className=''>
+    <div>
       {loading ?
         (<LoadingBox></LoadingBox>)
         :
@@ -40,7 +40,7 @@ export default function SideNav() {
               <nav className='sidebar d-none d-xxl-block'>
                 <ul className='navList'>
                   <li className=''>
-                    <Link to="/"><button className='btn btn-primary'>Home</button></Link>
+                    <Link to="/"><button >Home</button></Link>
                   </li>
 
 
@@ -93,11 +93,9 @@ export default function SideNav() {
                             <li className='my-auto'>
                               <button className="btn btn-primary" onClick={() => navigate("login")}>Logga in</button>
                             </li>}
-
                         </ul>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </nav>
